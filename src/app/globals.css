@@ -8,13 +8,13 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
   color: rgb(var(--foreground-rgb));
@@ -24,4 +24,34 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+*::selection {
+  background-color: #b2c9cd;
+  color: #406368;
+}
+
+.topNav a{
+  display: block;
+}
+
+
+.topNav .active-link{
+  color: #043a40;
+  border-bottom: 1px solid #04565f;
+}
+
+
+/* Utility classto hide elements on mobile screen sizes */
+@media screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/* Utility classto hide elements on mobile screen sizes */
+@media screen and (min-width: 769px) {
+  .hide-large {
+    display: none;
+  }
 }
