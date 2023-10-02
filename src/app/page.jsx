@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import { Button } from "antd";
 import { FiEdit3 } from "react-icons/fi";
