@@ -4,7 +4,7 @@ import { FiEdit3 } from "react-icons/fi";
 
 // get products data form fake store api
 async function getData () {
-  const res = await fetch('https://api.escuelajs.co/api/v1/prodducts?offset=0&limit=10');
+  const res = await fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10');
   return res.json();
 }
 
