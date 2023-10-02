@@ -6,5 +6,5 @@ export default function Loading() {
       <Spin />
       <h2 className='text-primary mt-4'>Loading...</h2>
     </div>
-  )
+  );
 }
