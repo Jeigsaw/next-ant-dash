@@ -2,7 +2,6 @@ import Image from "next/image";
 import { Button } from "antd";
 import { FiEdit3 } from "react-icons/fi";
 
-// mila: use fetch request to fakestoreapi and use it here
 async function getData () {
   const res = await fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10');
   return res.json();
