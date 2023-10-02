@@ -53,7 +53,7 @@ export default function DashLayout({children}) {
 
   return (
     <Layout>
-      <Header className='bg-[#97a5a7] flex flex-row justify-between md:justify-start px-2 md:pr-4 md:gap-20'>
+      <Header className='bg-primary-overlay flex flex-row justify-between md:justify-start px-2 md:pr-4 md:gap-20'>
 
         <div className='flex flex-row justify-center items-center gap-2 md:gap-6'>
 
