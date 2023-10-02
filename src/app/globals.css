@@ -1,3 +1,6 @@
+/* Font import from Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,6 +32,11 @@ body {
 *::selection {
   background-color: #b2c9cd;
   color: #406368;
+}
+
+p{
+  font-family: 'Libre Baskerville', serif;
+  @apply text-[0.8rem]
 }
 
 
