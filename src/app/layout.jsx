@@ -1,6 +1,6 @@
-import DashLayout from '@/components/DashLayout';
 import './globals.css'
 import { ConfigProvider } from 'antd';
+import DashLayout from '@/components/DashLayout';
 
 
 export const metadata = {
@@ -19,8 +19,9 @@ export default function RootLayout({ children }) {
           borderRadius: 4,
           colorText: '#222',
           fontSize: 15,
-          colorBgElevated: '#d1d7d7'
+          colorBgElevated: '#e4eaea'
         },
+        // components token
         components: {
           Layout:{
             siderBg: '#eee'
@@ -34,12 +35,18 @@ export default function RootLayout({ children }) {
           },
           Divider:{
             verticalMarginInline: '1rem'
+          },
+          Button:{
+            defaultShadow: 0,
+            primaryShadow: 0,
+            primaryColor: '#5a6769',
           }
         }
       }}
     >
       <html lang="en">
         <body>
+
           <DashLayout>
           {children}
           </DashLayout>

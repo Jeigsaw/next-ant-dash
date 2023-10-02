@@ -31,14 +31,21 @@ body {
   color: #406368;
 }
 
+
 .topNav a{
   display: block;
 }
 
-
+/* active links style of the top navigation in header */
 .topNav .active-link{
   color: #043a40;
   border-bottom: 1px solid #04565f;
+}
+
+/* active links style in the sidebar */
+.sidebar-menu li:has(.active-side-link) {
+  background-color: #ccd8da;
+  color: #296561;
 }
 
 
@@ -49,7 +56,7 @@ body {
   }
 }
 
-/* Utility classto hide elements on mobile screen sizes */
+/* Utility classto hide elements on bigger screen sizes */
 @media screen and (min-width: 769px) {
   .hide-large {
     display: none;
