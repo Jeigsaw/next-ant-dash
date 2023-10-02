@@ -16,7 +16,7 @@ export default async function Home() {
       <p>We offer wonderful shopping experience.</p>
 
       <section className="mt-8 pb-8">
-        <h3>New Arrivals (25)</h3>
+        <h3>New Arrivals ({products.length})</h3>
 
         {/* Product Gallery */}
         <div className="flex flex-row flex-wrap gap-6 mt-4">
